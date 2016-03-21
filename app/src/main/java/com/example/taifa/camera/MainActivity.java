@@ -28,6 +28,8 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
 
                 Intent camera_intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                File file = getFile();
+                camera
 
             }
         });
