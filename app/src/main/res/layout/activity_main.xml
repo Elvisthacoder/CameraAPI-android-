@@ -11,9 +11,16 @@
     tools:context=".MainActivity"
     >
     <button
-        android:>
+        android:layout_width="200dp"
+        android:Layout_height="wrap_content"
+        android:text="Capture Image"
+        android:id="@id/button"
+        android:Layout_gravity="center_horizontal"
 
 
-    </button>
+    />
+
+
+
 
 </LinearLayout>
