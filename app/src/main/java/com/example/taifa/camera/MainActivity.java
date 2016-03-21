@@ -3,6 +3,7 @@ package com.example.taifa.camera;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -26,7 +27,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-                Intent camera_intent = new Intent()
+                Intent camera_intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
             }
         });
