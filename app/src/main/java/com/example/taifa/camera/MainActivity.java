@@ -1,10 +1,13 @@
 package com.example.taifa.camera;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import java.io.File;
 
 
 public class MainActivity extends Activity {
@@ -19,23 +22,20 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         button = (Button) findViewById(R.id.button);
         imageView = (ImageView) findViewById(R.id.Image_view);
-        button.setOnClickListener(new View.OnClickListener()    {
-
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void OnClick(View v){
-
-
+            public void onClick(View v) {
 
             }
-
         });
+
     }
 
 
-    Private File getFile() {
+    private File getFile() {
 
-        File folder = new File ("sdcard/camera_app");
-        if(!folder.exists()){
+        File folder = new File("sdcard/camera_app");
+        if (!folder.exists()) {
 
 
             folder.mkdir();
@@ -43,7 +43,8 @@ public class MainActivity extends Activity {
 
         }
 
-
+        File 
         return null;
     }
+
 }
