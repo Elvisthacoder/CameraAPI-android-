@@ -24,7 +24,8 @@
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:id="@+id/Image_view"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:Layout_marginTop="20dp"/>
 
 
 
