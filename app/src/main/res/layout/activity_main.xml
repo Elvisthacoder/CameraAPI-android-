@@ -16,17 +16,24 @@
         android:text="Capture Image"
         android:id="@+id/button"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
 
 
     />
 
+    <!--<ImageView-->
+        <!--android:layout_width=""-->
+        <!--android:layout_height="300dp"-->
+        <!--android:id="@+id/Image_view"-->
+        <!-- -->
+        <!--/>-->
+
     <ImageView
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:id="@+id/Image_view"
+        android:id="@+id/imageView"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"/>
-
+        />
 
 
 </LinearLayout>
