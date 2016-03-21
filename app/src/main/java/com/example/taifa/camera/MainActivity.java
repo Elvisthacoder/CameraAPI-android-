@@ -26,6 +26,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
 
+                Intent camera_intent = new Intent()
+
             }
         });
 
@@ -44,7 +46,7 @@ public class MainActivity extends Activity {
         }
 
         File image_file = new File(folder, "cam_image.jpg");
-        return null;
+        return image_file;
     }
 
 }
