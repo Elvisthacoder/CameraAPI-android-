@@ -2,6 +2,7 @@ package com.example.taifa.camera;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -15,7 +16,7 @@ public class MainActivity extends Activity {
 
     Button button;
     ImageView imageView;
-
+    static final int CAM_REQUETST = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,8 @@ public class MainActivity extends Activity {
 
                 Intent camera_intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 File file = getFile();
-                camera
+                camera_intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(file));
+                startActivityForResult();
 
             }
         });
