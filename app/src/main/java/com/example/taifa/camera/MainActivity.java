@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
 
         }
 
-        File 
+        File image_file = new File(folder, "cam_image.jpg");
         return null;
     }
 
